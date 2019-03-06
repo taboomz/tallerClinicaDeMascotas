@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista Propietarios</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+<body>
+
+    <header id="baner"> Clinica de mascotas </header>
+
+     <nav id="paginasAdicionales" >
+            <ul>
+                <li>Inicio</li>
+                <li>Listar propietario</li>
+                <li><a href="vista1.html"> mascota</a></li>
+            </ul>
+     </nav>
+
+     <section>
+         <h3>Listar Propietarios</h3>
+         <table id="tpropietario">
+             <tr>Listado de Propietarios</tr>
+             <tr>
+                 <td>Nombres</td>
+                 <td>Apellidos</td>
+                 <td>Direccion</td>
+                 <td>Telefono</td>
+                 <td>Opcion</td>
+             </tr>
+             <tr> 
+                <td>Usuario1</td>
+                <td>apellido</td>
+                <td>clll 12</td>
+                <td>11111</td>
+                <td><button class="bteditar">Ver detalles</button></td>
+            </tr>
+             <tr>
+                 <td>usuario2</td>
+                 <td>apee2</td>
+                 <td>cll 39</td>
+                 <td>5555</td>
+                 <td><button class="bteditar">Ver detalles</button></td>
+             </tr>
+         </table>
+         <form id="editar-Usuario" >
+             <h3>Ver/Editar detalle del usuario</h3>
+             Nombres: <input type="text" name="nombre" id="nombres">
+                Apellidos: <input type="text" name="apellido" id="apellidos">
+                Direccion: <input type="text" name="direccion" id="direccion">
+                Telefono: <input type="tel" name="telefono" id="telefono">
+                <button name="Editar" id="editar">Editar</button>
+         </form>
+     </section>
+     <aside>
+         <table >
+             <h4>Ver/Editar Mascota</h4>
+           <tr>
+               <td>Nombre</td>
+               <td>Tipo</td>
+               <td>Fecha nacimiento</td>
+               <td></td>
+           </tr> 
+         </table>
+     </aside>
+
+     <script src="jquery-3.3.1.min.js"></script>
+     <script src="logica2.js"></script>
+ 
+</body>
+</html>

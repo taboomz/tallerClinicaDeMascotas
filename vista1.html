@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hospital de mascotas </title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    
+</head>
+<body>
+    <header id="baner"> Clinica de mascotas </header>
+
+    <nav id="paginasAdicionales" >
+        <ul>
+            <li><a href="#inicio" class="activa">Inicio</a></li>
+            <li><a href="listarPropietario.html">Propietario</a></li>
+            <li><a href="">Agregar mascota</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h5>Agregar Mascota</h5>
+            <table id="tPropietario" class="tabla">
+                <tr>Lista propietarios</tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Direccion</td>
+                    <td>Telefono</td>
+                    <td>Opcion</td>
+                </tr>
+                <tr>
+                    <td>Julian</td>
+                    <td>Pizarro Pertuz</td>
+                    <td>MZ3 cs 1 urb Sierra Dentro</td>
+                    <td>3019090090</td>
+                    <td><a href="#mascota" >Agregar Mascota</a></td>
+                </tr>
+                <tr>
+                    <td>Jose</td>
+                    <td>Pertuz</td>
+                    <td>MZ 1 cs 1 Urb Sierra Dentro</td>
+                    <td>3011112111</td>
+                    <td><a href="#mascota" >Agregar Mascota</a></td>
+                </tr>
+            </table>
+    </section>
+    <aside>
+            <form id="Add-Propietario">
+                    <h2>Agregar propietario</h2>
+                    Nombres: <input type="text" name="nombre" id="nombres">
+                    Apellidos: <input type="text" name="apellido" id="apellidos">
+                    Direccion: <input type="text" name="direccion" id="direccion">
+                    Telefono: <input type="tel" name="telefono" id="telefono">
+                    <button name="Agregar" id="add">Agregar</button>
+                </form>
+            
+        <form id="Add-Mascota" >
+            <h2>Agregar Mascota</h2>
+            Propietario: <br>
+            Nombre: <input type="text" name="nombre" id="mascota"> <br>
+            Tipo: <select name="tipo" id="tipo">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Loro">Loro</option>
+                    <option value="Pez">Pez</option>
+                 </select> <br>
+            F/N : <input type="date" name="nacimiento" id="nacimiento"><br>
+            <button  name="Agregar" id="add-mascota">Agregar</button>
+        </form>
+        <table id="tMascota">
+            <tr>
+                <td>Nombre</td>
+                <td>Tipo</td>
+                <td>Fecha Nacimiento</td>
+            </tr>
+        </table>
+    </aside>
+    <script src="jquery-3.3.1.min.js"></script> 
+    <script src="logica.js" type="text/javascript"></script>
+</body>
+</html>
